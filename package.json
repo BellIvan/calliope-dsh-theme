@@ -1,0 +1,29 @@
+{
+  "name": "calliope-dsh-theme",
+  "version": "1.0.0",
+  "description": "A dark, paper-textured theme for DeepSeek Harness with interactive dust particles and volumetric light.",
+  "private": false,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "docs", "icon.svg"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "ui",
+    "canvas"
+  ],
+  "license": "MIT"
+}
